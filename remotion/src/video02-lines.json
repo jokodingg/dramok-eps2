@@ -1,0 +1,620 @@
+{
+ "m1": {
+  "start": 0.3,
+  "dur": 4.049,
+  "text": "emang kalau aku konsul ke jokoding… skripsiku pasti selesai?",
+  "words": [
+   [
+    0.0,
+    "emang"
+   ],
+   [
+    0.34,
+    "kalau"
+   ],
+   [
+    0.54,
+    "aku"
+   ],
+   [
+    0.76,
+    "konsul"
+   ],
+   [
+    1.16,
+    "ke"
+   ],
+   [
+    1.26,
+    "jokoding…"
+   ],
+   [
+    2.3,
+    "skripsiku"
+   ],
+   [
+    3.18,
+    "pasti"
+   ],
+   [
+    3.48,
+    "selesai?"
+   ]
+  ]
+ },
+ "l1": {
+  "start": 4.55,
+  "dur": 3.709,
+  "text": "ya enggak juga sih. tapi apa salahnya dicoba dulu?",
+  "words": [
+   [
+    0.0,
+    "ya"
+   ],
+   [
+    0.28,
+    "enggak"
+   ],
+   [
+    0.52,
+    "juga"
+   ],
+   [
+    0.9,
+    "sih."
+   ],
+   [
+    1.68,
+    "tapi"
+   ],
+   [
+    2.0,
+    "apa"
+   ],
+   [
+    2.46,
+    "salahnya"
+   ],
+   [
+    2.96,
+    "dicoba"
+   ],
+   [
+    3.26,
+    "dulu?"
+   ]
+  ]
+ },
+ "m2": {
+  "start": 8.4,
+  "dur": 1.228,
+  "text": "…iya juga sih.",
+  "words": [
+   [
+    0.0,
+    "…iya"
+   ],
+   [
+    0.42,
+    "juga"
+   ],
+   [
+    0.66,
+    "sih."
+   ]
+  ]
+ },
+ "j1": {
+  "start": 13.8,
+  "dur": 4.049,
+  "text": "haii! aku J.O.K.S, joks! ada yang bisa kubantu?",
+  "words": [
+   [
+    0,
+    "haii!"
+   ],
+   [
+    0.76,
+    "aku"
+   ],
+   [
+    0.94,
+    "J.O.K.S,"
+   ],
+   [
+    2.12,
+    "joks!"
+   ],
+   [
+    2.98,
+    "ada"
+   ],
+   [
+    3.08,
+    "yang"
+   ],
+   [
+    3.2,
+    "bisa"
+   ],
+   [
+    3.34,
+    "kubantu?"
+   ]
+  ]
+ },
+ "m3": {
+  "start": 18.0,
+  "dur": 4.284,
+  "text": "eh… aku mau konsul soal skripsiku. bisa bantu aku?",
+  "words": [
+   [
+    0.0,
+    "eh…"
+   ],
+   [
+    0.96,
+    "aku"
+   ],
+   [
+    1.2,
+    "mau"
+   ],
+   [
+    1.42,
+    "konsul"
+   ],
+   [
+    1.96,
+    "soal"
+   ],
+   [
+    2.3,
+    "skripsiku."
+   ],
+   [
+    3.22,
+    "bisa"
+   ],
+   [
+    3.64,
+    "bantu"
+   ],
+   [
+    3.94,
+    "aku?"
+   ]
+  ]
+ },
+ "j2": {
+  "start": 22.4,
+  "dur": 15.229,
+  "text": "bisa dong! gampang, cuma lima langkah. satu, konsultasi dulu, gratis. dua, deal harga, bisa nego. tiga, tim jokoding bantu garap. empat, kamu cek, kurang sreg? revisi. lima, serah terima. beres!",
+  "words": [
+   [
+    0.0,
+    "bisa"
+   ],
+   [
+    0.5,
+    "dong!"
+   ],
+   [
+    1.16,
+    "gampang,"
+   ],
+   [
+    1.7,
+    "cuma"
+   ],
+   [
+    1.96,
+    "lima"
+   ],
+   [
+    2.28,
+    "langkah."
+   ],
+   [
+    2.9,
+    "satu,"
+   ],
+   [
+    3.62,
+    "konsultasi"
+   ],
+   [
+    4.08,
+    "dulu,"
+   ],
+   [
+    4.4,
+    "gratis."
+   ],
+   [
+    5.52,
+    "dua,"
+   ],
+   [
+    6.12,
+    "deal"
+   ],
+   [
+    6.22,
+    "harga,"
+   ],
+   [
+    6.68,
+    "bisa"
+   ],
+   [
+    6.96,
+    "nego."
+   ],
+   [
+    7.8,
+    "tiga,"
+   ],
+   [
+    8.44,
+    "tim"
+   ],
+   [
+    8.74,
+    "jokoding"
+   ],
+   [
+    9.12,
+    "bantu"
+   ],
+   [
+    9.54,
+    "garap."
+   ],
+   [
+    10.18,
+    "empat,"
+   ],
+   [
+    10.88,
+    "kamu"
+   ],
+   [
+    11.06,
+    "cek,"
+   ],
+   [
+    11.3,
+    "kurang"
+   ],
+   [
+    11.66,
+    "sreg?"
+   ],
+   [
+    11.94,
+    "revisi."
+   ],
+   [
+    13.0,
+    "lima,"
+   ],
+   [
+    13.6,
+    "serah"
+   ],
+   [
+    13.94,
+    "terima."
+   ],
+   [
+    14.38,
+    "beres!"
+   ]
+  ]
+ },
+ "m4": {
+  "start": 37.85,
+  "dur": 4.206,
+  "text": "oke oke… kalau lima ribu, skripsiku bisa selesai nggak?",
+  "words": [
+   [
+    0.0,
+    "oke"
+   ],
+   [
+    0.4,
+    "oke…"
+   ],
+   [
+    1.26,
+    "kalau"
+   ],
+   [
+    1.48,
+    "lima"
+   ],
+   [
+    1.78,
+    "ribu,"
+   ],
+   [
+    2.28,
+    "skripsiku"
+   ],
+   [
+    3.16,
+    "bisa"
+   ],
+   [
+    3.4,
+    "selesai"
+   ],
+   [
+    3.98,
+    "nggak?"
+   ]
+  ]
+ },
+ "j3": {
+  "start": 42.9,
+  "dur": 1.489,
+  "text": "lima ribu?",
+  "words": [
+   [
+    0.0,
+    "lima"
+   ],
+   [
+    0.3,
+    "ribu?"
+   ]
+  ]
+ },
+ "j4": {
+  "start": 44.5,
+  "dur": 1.567,
+  "text": "lima ribu?!",
+  "words": [
+   [
+    0.0,
+    "lima"
+   ],
+   [
+    0.56,
+    "ribu?!"
+   ]
+  ]
+ },
+ "j5": {
+  "start": 47.2,
+  "dur": 14.106,
+  "text": "dasar kamu miskin, sulit, susah, ripuh, busung lapar, homeless, #@$%! #@$%! #@$%! #@$%! rumah kardus, meninggal aja kamu ya, gak ngotak! sana sini minta murah! revisi aja belom kelar",
+  "words": [
+   [
+    0.0,
+    "dasar"
+   ],
+   [
+    0.46,
+    "kamu"
+   ],
+   [
+    0.74,
+    "miskin,"
+   ],
+   [
+    1.52,
+    "sulit,"
+   ],
+   [
+    2.14,
+    "susah,"
+   ],
+   [
+    2.78,
+    "ripuh,"
+   ],
+   [
+    3.32,
+    "busung"
+   ],
+   [
+    3.66,
+    "lapar,"
+   ],
+   [
+    4.24,
+    "homeless,"
+   ],
+   [
+    4.88,
+    "#@$%!"
+   ],
+   [
+    5.52,
+    "#@$%!"
+   ],
+   [
+    6.32,
+    "#@$%!"
+   ],
+   [
+    7.0,
+    "#@$%!"
+   ],
+   [
+    7.52,
+    "rumah"
+   ],
+   [
+    7.84,
+    "kardus,"
+   ],
+   [
+    8.44,
+    "meninggal"
+   ],
+   [
+    8.82,
+    "aja"
+   ],
+   [
+    9.08,
+    "kamu"
+   ],
+   [
+    9.4,
+    "ya,"
+   ],
+   [
+    9.86,
+    "gak"
+   ],
+   [
+    10.02,
+    "ngotak!"
+   ],
+   [
+    10.82,
+    "sana"
+   ],
+   [
+    11.0,
+    "sini"
+   ],
+   [
+    11.36,
+    "minta"
+   ],
+   [
+    11.7,
+    "murah!"
+   ],
+   [
+    12.28,
+    "revisi"
+   ],
+   [
+    12.76,
+    "aja"
+   ],
+   [
+    12.98,
+    "belom"
+   ],
+   [
+    13.28,
+    "kelar"
+   ]
+  ],
+  "censor": [
+   4.78,
+   7.46
+  ]
+ },
+ "m5a": {
+  "start": 52.080000000000005,
+  "dur": 1.95,
+  "text": "aduh! ampun,",
+  "words": [
+   [
+    0,
+    "aduh!"
+   ],
+   [
+    1.08,
+    "ampun,"
+   ]
+  ]
+ },
+ "m5b": {
+  "start": 61.45,
+  "dur": 1.446,
+  "text": "ampun, joks!",
+  "words": [
+   [
+    0.23,
+    "ampun,"
+   ],
+   [
+    0.83,
+    "joks!"
+   ]
+  ]
+ },
+ "j6": {
+  "start": 63.0,
+  "dur": 3.004,
+  "text": "lima ribu mah buat beli es cekek aja, masss!!",
+  "words": [
+   [
+    0,
+    "lima"
+   ],
+   [
+    0.2,
+    "ribu"
+   ],
+   [
+    0.4,
+    "mah"
+   ],
+   [
+    0.84,
+    "buat"
+   ],
+   [
+    1.22,
+    "beli"
+   ],
+   [
+    1.56,
+    "es"
+   ],
+   [
+    1.8,
+    "cekek"
+   ],
+   [
+    2.12,
+    "aja,"
+   ],
+   [
+    2.42,
+    "masss!!"
+   ]
+  ]
+ },
+ "l2": {
+  "start": 66.5,
+  "dur": 2.586,
+  "text": "joks udah marah nih. apa pilihanmu?",
+  "words": [
+   [
+    0.0,
+    "joks"
+   ],
+   [
+    0.52,
+    "udah"
+   ],
+   [
+    0.8,
+    "marah"
+   ],
+   [
+    1.3,
+    "nih."
+   ],
+   [
+    1.66,
+    "apa"
+   ],
+   [
+    1.94,
+    "pilihanmu?"
+   ]
+  ]
+ }
+}

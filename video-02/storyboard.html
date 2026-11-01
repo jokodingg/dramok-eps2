@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard Video 2 - Jokoding</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#44AA00;--thunder:#322F30;--mint:#F9FDF7;--line:#e3ece0}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--mint);color:var(--thunder);font-family:Poppins,system-ui,sans-serif}
+  header{padding:28px 24px 8px;max-width:1280px;margin:auto}
+  h1{margin:0;font-size:26px}
+  h1 span{color:var(--green)}
+  header p{margin:6px 0 0;color:#5b5859;font-size:14px}
+  button{font:inherit;font-weight:600;font-size:13px;background:var(--thunder);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;margin-top:10px}
+  button:hover{background:var(--green)}
+  .grid{max-width:1280px;margin:auto;padding:16px 24px 48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .frame{position:relative;aspect-ratio:9/16;background:#000}
+  .frame img{width:100%;height:100%;display:block}
+  .zone{display:none;position:absolute;background:rgba(229,72,77,.35);pointer-events:none}
+  body.show .zone{display:block}
+  .meta{padding:12px 14px 14px;font-size:12.5px;line-height:1.5}
+  .tag{display:inline-block;background:var(--thunder);color:#fff;border-radius:6px;padding:2px 8px;font-weight:600;font-size:11.5px;margin-right:6px}
+  .time{color:var(--green);font-weight:600}
+  .dlg{margin:8px 0 4px;font-weight:600}
+  .note{color:#5b5859}
+  .sfx{margin-top:4px;color:#5b5859;font-size:11.5px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Storyboard Video 2 <span>"Lima Ribu?!"</span></h1>
+  <p>±57 detik · 9:16 · frame diam dari Remotion dengan karakter, kamar malam (02.00), dan gaya yang sama dengan video 1. M = mahasiswa, L = laptop, J = Joks.</p>
+  <p>Subtitle di sini hanya potongan kalimat. Di video, subtitle mengikuti kata per kata dan timing audio asli.</p>
+  <button onclick="document.body.classList.toggle('show')">Tampilkan / sembunyikan area UI Instagram (merah)</button>
+</header>
+<main class="grid" id="grid"></main>
+<script>
+const SHOTS=[
+ ["cover","0","0:00–0:00.5","Cover","—","Frame diam: Joks marah dengan tongkat bisbol di atas mahasiswa yang tengkurap, awan debu. Teks LIMA RIBU?! + PART 2.","—"],
+ ["s1","1","0:00.5–0:05","Harapan… tapi ragu","M: \"emang kalau aku konsul ke jokoding… skripsiku pasti selesai?\"","Kamar malam yang sama. Mahasiswa mengangkat kepala dengan mata berbinar, lalu ragu sambil menggaruk kepala. Laptop menatapnya. Push-in pelan.","ting kilau · lo-fi pelan"],
+ ["s2","2","0:05–0:09","Laptop angkat bahu","L: \"ya enggak juga sih. tapi apa salahnya dicoba dulu?\" · M: \"…iya juga sih.\"","Lengan kecil laptop muncul untuk mengangkat bahu, wajahnya santai. Mahasiswa mulai berharap dan manggut-manggut.","boing kecil"],
+ ["s3","3","0:09–0:13","POV layar: klik WhatsApp","—","Layar laptop memenuhi frame. Kursor ke kontak Jokoding, ragu sebentar, lalu klik. Chat terbuka, layar flash hijau.","gerak mouse, klik, notif"],
+ ["s4a","4a","0:13–0:14.5","Joks menyembul dari layar","—","Layar laptop menyala hijau, Joks keluar dari layar (laptop masih di posisi awal). Mahasiswa kaget, tangan di pipi. Laptop ikut kaget.","pop, sparkle · musik ceria masuk"],
+ ["s4b","4b","0:14.5–0:17","Laptop bergeser, Joks mendarat","J: \"haii! aku J-O-K-S, joks! ada yang bisa kubantu?\"","Laptop tergeser ke kanan secara natural (meluncur dengan garis gerak, sedikit miring lalu kembali tegak, wajah 'aduh'), memberi ruang. Joks mendarat di tengah meja di antara mahasiswa dan laptop, melambai. Huruf J·O·K·S muncul satu-satu.","geser 'sret', duk mendarat"],
+ ["s5","5","0:17–0:20","Mahasiswa canggung","M: \"eh… aku mau konsul soal skripsiku. bisa bantu aku?\"","Mahasiswa senyum canggung, menggaruk kepala, berkeringat. Joks di meja tersipu.","—"],
+ ["s6a","6a","0:20–0:23","Joks menunjuk ke atas","J: \"bisa dong! gampang, cuma lima langkah.\"","Joks menunjuk ke atas. Mahasiswa dan laptop ikut melihat ke atas. Muncul 'bubble chat' berbentuk layar putih (Mint Cream, bingkai Thunder, bar hijau) bertuliskan '5 langkah order di jokoding'.","pop bubble"],
+ ["step1","6b","0:23–0:25","Layar penuh · 01 Konsultasi gratis","J (lanjut): \"satu, konsultasi dulu, gratis.\"","Kamera masuk ke bubble sampai layar penuh. Ilustrasi: HP dengan chat WhatsApp Jokoding, cap GRATIS. Joks kecil mengintip di pojok dan menunjuk panel.","whoosh masuk, pop"],
+ ["step2","6c","0:25–0:27","02 Deal harga","J: \"dua, deal harga, bisa nego.\"","Ilustrasi: mahasiswa dan Joks, label harga Rp, panah bolak-balik 'nego', cap DEAL!","pop, cap 'dug'"],
+ ["step3","6d","0:27–0:29","03 Dibantu garap","J: \"tiga, tim jokoding bantu garap.\"","Ilustrasi: monitor berisi kode, roda gigi berputar, Joks bekerja, progress bar terisi.","ketikan, roda gigi"],
+ ["step4","6e","0:29–0:31","04 Cek & revisi","J: \"empat, kamu cek, kurang sreg? revisi.\"","Ilustrasi: dokumen dengan centang hijau, satu baris dilingkari merah, panah 'revisi', kaca pembesar.","coret pena, pop"],
+ ["step5","6f","0:31–0:33","05 Serah terima","J: \"lima, serah terima. beres!\"","Ilustrasi: folder skripsi_final dikirim ke mahasiswa yang senang, centang hijau 'beres!'. Lalu kembali ke kamar.","ding"],
+ ["s7","7","0:33–0:37","Lima ribu…","M: \"oke oke… kalau lima ribu, skripsiku bisa selesai nggak?\"","Senyum licik, menyodorkan uang Rp5.000 lecek (versi kartun). Joks menatap datar.","kertas kresek"],
+ ["s8a","8a","0:37–0:39","Close-up: datar","J: \"lima ribu?\"","Hening dan jangkrik. Close-up visor Joks, datar, satu mata berkedut.","musik berhenti, krik, ngiik"],
+ ["s8b","8b","0:39–0:41","Close-up: meledak","J: \"LIMA RIBU?!\"","Mata merah, kepala berasap, layar bergetar, teks besar.","bass hit"],
+ ["s9a","9a","0:41–0:43","Uang dilempar — PLAK!","—","Joks melempar uang ke muka mahasiswa sampai menempel. Laptop ikut kaget.","whoosh, PLAK · musik kejar-kejaran mulai"],
+ ["s9b","9b","0:43–0:48","Digebukin (sketsa komedi)","J: (omelan, disensor \"tiit\") · M: \"aduh! ampun! ampun, joks!\" · J: \"LIMA RIBU MAH BUAT BELI ES CEKEK AJA, MASSS!!\"","Mahasiswa tengkurap di lantai, Joks berdiri di punggungnya dan memukul pakai tongkat bisbol. Awan debu, bintang, BLETAK!, kotak sensor di mulut Joks, ikon es cekek.","bletak, tiit, piano kacau"],
+ ["s10","10","0:48–0:53","Laptop turun ke penonton","L: \"joks udah marah nih. apa pilihanmu?\"","Adegan pukul di-blur. Laptop turun dari atas dan menatap penonton sambil berkeringat.","swish, musik turun"],
+ ["s11","11","0:53–0:57","End card","(teks saja)","Format sama dengan video 1: APA PILIHANMU? · A. Belajar bareng Joks · B. Beli es cekek · Komentar di bawah · WhatsApp · jokoding.id","pop, musik ceria"],
+];
+/* zona UI Reels dalam persen kanvas 1080x1920 */
+const zones=`<div class='zone' style='left:0;top:0;width:100%;height:13%'></div><div class='zone' style='left:0;bottom:0;width:100%;height:21.9%'></div><div class='zone' style='right:0;top:46.9%;width:11.1%;height:31.2%'></div>`;
+document.getElementById("grid").innerHTML=SHOTS.map(([f,n,t,title,d,note,sfx])=>`<div class='card'>
+  <div class='frame'><img src='storyboard/${f}.png' alt='Shot ${n}'>${zones}</div>
+  <div class='meta'><span class='tag'>Shot ${n}</span><span class='time'>${t}</span><div class='dlg'>${title}</div><div>${d}</div><div class='note'>${note}</div><div class='sfx'>SFX: ${sfx}</div></div></div>`).join("");
+</script>
+</body>
+</html>

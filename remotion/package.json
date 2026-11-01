@@ -1,0 +1,1 @@
+{"name":"jokoding-video-01","version":"1.0.0","private":true,"scripts":{"studio":"remotion studio src/index.jsx","render":"remotion render src/index.jsx Video01 out/video-01.mp4"},"dependencies":{"@remotion/cli":"4.0.355","@remotion/google-fonts":"4.0.355","@remotion/media-utils":"4.0.355","react":"19.0.0","react-dom":"19.0.0","remotion":"4.0.355"}}
